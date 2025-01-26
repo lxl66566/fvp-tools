@@ -1,12 +1,23 @@
+# FVP 系列游戏语音加速
+
+通过解包 - 加速音频文件 - 封包的方式，可以加速 FVP 系列游戏的语音播放速度。本人使用 _五彩斑斓的世界_ 作为实践。
+
+使用方式：读懂 [speedup.py](./speedup.py) 并修改。将 `voice.bin` 的路径写入此脚本，执行即可。
+
+# FVP tools
+
+（原仓库 README.md）
+
 FVP tools
----------
+
+---
 
 Tools for translating games based on FVP engine.
 
 ### `bin_archiver`
 
 BIN archive packer and unpacker. Does not convert images for performance
-reasons: if you often need to repack, converting *all* images would take too
+reasons: if you often need to repack, converting _all_ images would take too
 much time. Instead, you select one image to convert, and then pack the files.
 
 NOTE: when packing, make sure the folder doesn't contain any files other than
